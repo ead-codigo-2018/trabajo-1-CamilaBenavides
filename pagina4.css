@@ -1,0 +1,135 @@
+.container {
+  display: grid;
+  background-color: #fafbfd;
+  grid-template-columns: 48% auto;
+  grid-template-rows: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 120px;
+}
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 90px;
+  margin-bottom: 65px;
+}
+.article {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-right: 110px;
+  margin-top: 90px;
+}
+img {
+  width: 100%;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: left;
+  line-height: 25px;
+}
+.titulo4 {
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+.subtitulo4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid;
+  padding: 3px;
+  border-color: #e1b9b4;
+  color: #e1b9b4;
+}
+h3 {
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:450px) {
+  .container {
+    display: grid;
+    background-color: #fafbfd;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .article {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
+    max-width: 80%;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+  }
+  .titulo4 {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  .subtitulo4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid;
+    padding: 2px;
+    border-color: #e1b9b4;
+    color: #e1b9b4;
+  }
+  h3 {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
